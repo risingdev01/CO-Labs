@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="deco">
+			<div class="titleBar col-12">
+				<div class="name">CO LAB</div>
+			</div>
+		</div>
+		<div class="sidebarNav col-4">
+			<ul class="menuItems col-12">
+				<li class="items firstItem active">Booth Multiplication</li>
+				<li class="items">Modified Booth Multiplication</li>
+				<li class="items">Restoring Division</li>
+				<li class="items">Non Restoring Division</li>
+				<li class="items">Decimal to Binary</li>
+				<li class="items">Credits</li>
+			</ul>
+		</div>
+		<div class="workAreaDecoration col-8">
+			<div class="workArea col-11">
+				<div class="workAreaTitle">Booth Multiplication</div>
+				<div class="field"><input class="col-7" type="text" id="multiplicand" placeholder="Multiplicand" value="1001"></div>
+				<br/>
+				<div class="field"><input class="col-7" type="text" id="multiplier" placeholder="Multiplier" value="11"></div>
+				<br/>
+				<div class="field"><button class="col-2" onclick="calc()">Calculate</button></div>
+				<br/>
+				<div class="field col-12" id="result"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

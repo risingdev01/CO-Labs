@@ -1,0 +1,199 @@
+:root{
+  --mainColour:#FFFFFFFF;
+  --activeGrey:#e6e6e6;
+  --acsentColour:#EC6302;
+  --lightGrey:#E7E3DF;
+  --mediumGrey:#BFBAB5;
+  --darkGrey:#48464C;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #FAF9F9;
+}
+
+.titleBar {
+  position: relative;
+  background-color: var(--mainColour);
+  height: 10vh;
+  z-index: 10;
+  box-shadow: 0px 1px 5px #888;
+  display: flex;
+  align-self: left;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 8em 0;
+}
+
+.name {
+  color: var(--acsentColour);
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+.deco {
+  background-color: var(--acsentColour);
+  width: 20em;
+  height: 10vh;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.sidebarNav {
+  background-color: #FAF9F9;
+  display: inline-block;
+  float: left;
+  position: relative;
+  z-index: 9;
+  box-sizing: border-box;
+
+  padding-top: 0px;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  min-height: 90vh;
+}
+
+.workAreaDecoration {
+  background-color: var(--acsentColour);
+  display: flex;
+  justify-content: center;
+  padding: 2em 0em;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+}
+
+.workArea {
+  background-color: var(--lighGrey);
+  display: inline-block;
+  float: left;
+  position: relative;
+  z-index: 8;
+  box-shadow: 1px 0px 10px #888 inset;
+  padding-top: 2em;
+
+  background-color: #FFF;
+  border-radius: 2em;
+  padding-top: 3em;
+  min-height: 90vh;
+}
+
+.workAreaTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3em;
+  margin-bottom: 1.5em;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.menuItems {
+  padding: 0em;
+  margin: 0em;
+}
+
+.items {
+ list-style: none;
+ background-color: var(--mainColour);
+ height: 3.5em;
+ border-bottom: 2px solid grey;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.active {
+  background-color: var(--activeGrey);
+
+  background-color: var(--acsentColour);
+  color: #FFF;
+  font-weight: 600;
+}
+
+input {
+  height: 3em;
+  border-radius: 1.5em;
+  padding-left: 1em;
+  border: .3em solid var(--acsentColour);
+  margin-bottom: 3em;
+}
+
+input:hover, input:focus {
+  box-shadow:
+    0 0 10px 0px #ec6302ba;
+}
+
+input:focus, button:focus {
+    outline-width: 0;
+}
+
+button {
+  height: 3em;
+  border-radius: 1.5em;
+  background-color: var(--acsentColour);
+  border: .1em solid var(--acsentColour);
+  color: #FFF;
+}
+
+button:hover{
+  background-color: transparent;
+  color: var(--acsentColour);
+}
+
+#result {
+  padding-top: 3em;
+  margin-bottom: 1em;
+}
+
+.resultHeading {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.lines {
+  height: 3em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  white-space: pre;
+}
+
+.separator {
+  height: .3em;
+  background-color: var(--mediumGrey);
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
